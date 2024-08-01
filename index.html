@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZE DOC</title>
+    <link rel="stylesheet" href="quize.css">
+
+</head>
+
+<body class="bg-[#2c6e49]  ">
+    <header class="font-sans  bg-[#4c956c] p-2 flex justify-between">
+        <h1 class="text-8xl text-right"> Quizzziee </h1>
+        <nav class="flex  mx-5 my-8 gap-10 text-xl ">
+            <ul><a class="hover:text-[#fefae0]" href="#home">Home</a></ul>
+            <ul><a class="hover:text-[#fefae0]" href="#QuizeCategory">Catogory</a></ul>
+            <ul><a class="hover:text-[#fefae0]" href="#performance">Performance</a></ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero1 flex flex-row  h-auto m-[4rem] gap-5">
+            <div class="flex flex-col h-[20rem] w-[40rem] justify-center align-super">
+                <h2 class="text-6xl my-8 font-extrabold text-[#fefae0] ">Discover Your Knowledge Quotient!</h2>
+                <p class="text-xl font-medium"> Welcome to Quizzziee! Dive into engaging quizzes that challenge your
+                    intellect and reveal intriguing insights about yourself. Ready to discover how much you know?
+                </p>
+            </div>
+            <div class="hero1img flex h-[20rem] w-[60rem] justify-center align-super">
+                <img src="quiz-2074324_1920.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="category m-[4rem] ">
+
+            <h1 id="QuizeCategory" class="text-center text-[#fefae0] text-3xl my-[2rem] font-bold "> Quize Category</h1>
+
+            <div class="cards flex justify-around ">
+                <!-- card1 -->
+                <div onclick="openNewPage('kids.html');startQuiz('kids');"
+                    class=" hover:scale-95 h-[30rem] w-[20rem] bg-[#dad7cd] border-none rounded-xl overflow-hidden  flex flex-col drop-shadow-2xl ">
+
+                    <img class="  h-[20rem] object-cover" src="kid.jpg" alt="">
+                    <div class="discription flex justify-center flex-col ">
+                        <h2 class="text-2xl mx-2 my-1 font-bold">"Kids' Quiz Zone"</h2>
+                        <p class="text-xs m-2">Explore colorful quizzes and playful challenges just for kids. Join the
+                            fun and learn while you play!
+
+                        </p>
+
+                        <button
+                            class="border-2 font-bold border-none drop-shadow-2xl bg-[#bc6c25] rounded-xl m-[1rem] p-2 w-[6rem]">Play
+                            Now</button>
+                    </div>
+
+                </div>
+
+                <!-- card1 end -->
+
+                <!-- card2 -->
+                <div onclick="openNewPage('adult.html');startQuiz('adult');"
+                    class="hover:scale-95 h-[30rem] w-[20rem] bg-[#dad7cd] border-none rounded-xl overflow-hidden flex flex-col drop-shadow-2xl">
+                    <div>
+                        <img class="  h-[20rem] w-full object-cover" src="professional.jpg" alt="">
+                    </div>
+                    <div class="discription">
+                        <h2 class="text-2xl mx-2 my-1 font-bold">Fuel Your Curiosity!</h2>
+                        <p class="text-xs m-2"> Explore engaging quizzes and Challenge yourself with trivia and
+                            personality tests to discover new insights. </p>
+                        <button
+                            class="border-2 font-bold border-none drop-shadow-2xl bg-[#bc6c25] rounded-xl m-[1rem] p-2 w-[6rem]">Play
+                            Now</button>
+                    </div>
+                </div>
+                <!-- card2 end -->
+
+                <!-- card3 -->
+                <div onclick="openNewPage('smartcat.html'); startQuiz('smartcat');"
+                    class="hover:scale-95 h-[30rem] w-[20rem] bg-[#dad7cd] border-none rounded-xl overflow-hidden flex flex-col drop-shadow-2xl ">
+                    <div>
+                        <img class=" h-[20rem]  w-full object-cover" src="cat.png" alt="">
+                    </div>
+                    <div class="discription">
+                        <h2 class="text-2xl mx-2 my-1 font-bold ">Elevate Your Intellect!</h2>
+                        <p class="text-xs m-2">Dive into stimulating puzzles and quizzes to push your intellect to new
+                            heights. </p>
+                        <button
+                            class="border-2 font-bold border-none drop-shadow-2xl bg-[#bc6c25] rounded-xl m-[1rem] p-2 w-[6rem]">Play
+                            Now</button>
+                    </div>
+                </div>
+                <!-- card3 end -->
+            </div>
+        </div>
+
+        <div id="performance" class=" m-[4rem]">
+            <h2 class="text-center text-[#fefae0]  font-bold text-3xl m-[3rem]">Performance</h2>
+            <div class="board  mx-[4rem] h-[20rem] w-[40rem] bg-[#f2cc8f] rounded-2xl">
+                <div class="Performance_title grid grid-cols-3">
+                    <div class=" mx-3 my-1 text-xl text-right font-bold ">Quize Category</div>
+                    <div class=" mx-3 my-1 text-xl text-right  font-bold">Scores  </div>
+                    <div class=" mx-3 my-1 text-xl  text-right font-bold">  CorrectAnswered</div>
+                </div>
+                
+                <div class=" p-3 grid grid-cols-2 text-left font-bold ">
+                    
+                    <div class="p-5">
+                        <h3 class=" my-4 py-3 text-2xl">Kids' Quiz Zone
+                            <!-- <div class=" my-7 text-2xl"> 0 </div> -->
+                        </h3>
+                        <h3 class=" my-4 py-3 text-2xl">Fuel Your Curiosity!
+                            <!-- <div class=" my-7 text-2xl"> 0 </div> -->
+                        </h3>
+                        <h3 class=" my-4 py-3 text-2xl">Elevate Your Intellect!
+                            <!-- <div class=" my-7 text-2xl"> 0 </div> -->
+                        </h3>
+
+                    </div>
+
+                    <div class="p-5 grid grid-cols-2 text-center"> 
+                        <div class="AllScore">
+                            <h3 class="kids-Score my-4 py-3 text-3xl">
+                                0
+                            </h3>
+                            <h3 class="adutl-Score my-4 py-3 text-3xl">
+                                0
+                            </h3>
+                            <h3 class="smartcat-Score my-4 py-3 text-3xl">
+                                0
+                            </h3>
+                        </div>
+
+                        <div class="All-Answer">
+                            <h3 class="kids-corrAnswer my-4 py-3 text-3xl">
+                                0
+                            </h3>
+                            <h3 class="adutl-corrAnswer my-4 py-3 text-3xl">
+                                0
+                            </h3>
+                            <h3 class="smartcat-corrAnswer my-4 py-3 text-3xl">
+                                0
+                            </h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="w-full h-[20rem] bg-[#1c2a23]">
+            <nav class="navigation w-svw h-full grid grid-cols-3  place-items-center text-center text-3xl">
+                <a href="#">
+                    <ul class="text-white flex  hover:text-[#bc4749]">Home</ul>
+                </a>
+                <a href="#QuizeCategory">
+                    <ul class="text-white flex  hover:text-[#bc4749]">quizzes</ul>
+                </a>
+                <a href="#">
+                    <ul class="text-white flex  hover:text-[#bc4749]">About Us</ul>
+                </a>
+                <a href="#">
+                    <ul class="text-white flex  hover:text-[#bc4749]">Copyright © 2024 Quizzziee</ul>
+                </a>
+                <a href="#">
+                    <ul class="text-white flex  hover:text-[#bc4749]"> Terms of Service &
+                        Privacy Policy </ul>
+                </a>
+                <a href="#">
+                    <ul class="text-white flex  hover:text-[#bc4749]">Contact Us: info@Quizzziee.com</ul>
+                </a>
+            </nav>
+        </footer>
+    </main>
+
+</body>
+<!-- <script src="app.js"></script> -->
+<script>
+
+    function openNewPage(url) {
+        window.open(url, '_blank');
+
+    }
+    function startQuiz(category) {
+        localStorage.setItem(`${category}`, category);
+        localStorage.setItem(`${category}-score`, 0); // Reset points for new quiz
+        localStorage.setItem(`${category}-correctAnswers`, 0);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        function updatePerformance() {
+            const kidsScore=document.querySelector('.kids-Score');
+            const adutlScore=document.querySelector('.adutl-Score');
+            const smartcatScore=document.querySelector('.smartcat-Score');
+
+            const kidscorrAnswer=document.querySelector('.kids-corrAnswer');
+            const adutlcorrAnswer=document.querySelector('.adutl-corrAnswer');
+            const smartcatcorrAnswer=document.querySelector('.smartcat-corrAnswer');
+
+            if (kidsScore && kidscorrAnswer) {
+                
+                kidsScore.textContent=localStorage.getItem('kids-score')||0;
+                kidscorrAnswer.textContent=localStorage.getItem('kids-correctAnswers')||0;
+                console.log(localStorage.getItem('kids-score'));
+                console.log(localStorage.getItem('kids-correctAnswers'));
+
+                
+            }else{console.log("ks not found");}
+
+            if(adutlScore && adutlcorrAnswer){
+                adutlScore.textContent=localStorage.getItem('adult-score')||0;
+                adutlcorrAnswer.textContent=localStorage.getItem('adult-correctAnswers')||0;
+            }
+            else{console.log("as not found");}
+
+            if(smartcatScore && smartcatcorrAnswer) {
+                
+                smartcatScore.textContent=localStorage.getItem('smartcat-score')||0;
+                smartcatcorrAnswer.textContent=localStorage.getItem('smartcat-correctAnswers')||0;
+            }
+            else{console.log("sm not found");}
+        }
+
+        // Update performance box when the page loads
+        updatePerformance();
+
+        // Listen for changes to localStorage and update performance accordingly
+        window.addEventListener('storage', function (event) {
+            if (['kids-score', 'kids-correctAnswers', 'adult-score', 'adult-correctAnswers', 'smartcat-score', 'smartcat-correctAnswers'].includes(event.key)) {
+                updatePerformance();
+            }
+        });
+    });
+
+</script>
+
+</html>
